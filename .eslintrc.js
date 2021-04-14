@@ -15,6 +15,8 @@ module.exports = {
     'comma-dangle': RULES.OFF,
     'space-before-function-paren': RULES.OFF,
     'no-shadow': RULES.OFF,
+    'react-hooks/exhaustive-deps': RULES.OFF,
+    radix: RULES.OFF,
     semi: 0,
   },
 };

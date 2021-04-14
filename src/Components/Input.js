@@ -7,10 +7,11 @@ const Input = (props) => {
 
 const styles = StyleSheet.create({
   inputStyle: {
-    height: 30,
+    height: 50,
     borderBottomColor: 'grey',
     borderBottomWidth: 1,
     marginVertical: 10,
+    fontSize: 18,
   },
 });
 
