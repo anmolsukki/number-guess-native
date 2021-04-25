@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text, Button, StyleSheet, TouchableWithoutFeedback, Keyboard, Alert } from 'react-native';
+import { View, Text, Button, StyleSheet, TouchableWithoutFeedback, Keyboard, Alert, Image } from 'react-native';
 import Card from '../Components/Card';
 import Input from '../Components/Input';
 import NumberContainer from '../Components/NumberContainer';
@@ -72,6 +72,16 @@ const StartGameScreen = (props) => {
           </View>
         </Card>
         {confirmedOutput}
+        <View>
+          <Image
+            source={{
+              uri: 'https://filmfare.wwmindia.com/content/2020/sep/sajidkhan11599800351.jpg',
+            }}
+            resizeMode="cover"
+            style={styles.imageContainer}
+            fadeDuration={3000}
+          />
+        </View>
       </View>
     </TouchableWithoutFeedback>
   );
@@ -86,11 +96,13 @@ const styles = StyleSheet.create({
   gameTitle: {
     fontSize: 20,
     marginVertical: 10,
+    fontFamily: 'OpenSans-Bold',
   },
   inputContainer: {
     width: 300,
     maxWidth: '80%',
     alignItems: 'center',
+    fontFamily: 'OpenSans-Bold',
   },
   btnContainer: {
     flexDirection: 'row',
@@ -108,6 +120,12 @@ const styles = StyleSheet.create({
   summaryContainer: {
     marginTop: 20,
     alignItems: 'center',
+  },
+  imageContainer: {
+    marginTop: 30,
+    width: 300,
+    height: 350,
+    borderRadius: 10,
   },
 });
 
